@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <title>My First Django Project</title>
+        <meta name="author" content="Odimayo Taiye Moses">
+        <meta name="description" content="Odimayo Taiye First Django Project">
+        <meta name="keyword" content="Odimayo, Taiye, Portfolio, FullStack Developer, Django Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/9ec37e7600.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel=stylesheet href={% static 'home.css' %}>
+        <script src={% static 'home.js' %}></script>
+    </head>
+    <body onload="setTimeout(Hidepreloader, 1500);">
+        <div id="preloader">
+            <div id="rotor">
+                
+            </div>
+        </div>
+        <div id="main" style="display: none;">
+            <div id="image">
+                <img src={% static 'Moses.jpg' %} />
+            </div>
+            <div>
+                <h1>
+                    Thanks For Visiting
+                </h1>
+                <h3 style="text-align: center;">Contact Me Via The Below links</h3>
+                <div id="die" style="text-align: center;  color: rgb(0,255,0);">
+                    <span><i class="fa fa-hand-o-down fa-5x"></i></span>
+                </div>
+            </div>
+            <div id="contact">
+                <ul>
+                    <li><span><i class="fa fa-facebook-square fa-2x"></i></span> <a href="https://www.facebook.com/settings?tab=account&section=username">Facebook</a></li>
+                    <li><span><i class="fa fa-google fa-2x"></i></span> <a href="mailto:odimayomoses6@gmail.com">Gmail</a></li>
+                    <li><span><i class="fa fa-linkedin-square fa-2x"></i></span> <a href="https://www.linkedin.com/in/odimayo-moses-taiye-435825234">LinkedIn</a></li>
+                    <li><span><i class="fa fa-twitter-square fa-2x"></i></span> <a class="twitter-follow-button" href="https://twitter.com/messages/compose?recipient_id=1506825384947560455">Twitter</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </body>
+</html>
